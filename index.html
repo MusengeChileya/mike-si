@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>House Listings</title>
+    <style>
+        /* Your existing CSS styles for house cards and images here */
+
+        /* Additional CSS styles for the search and filtering section */
+        .filter-section {
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        .filter-section label {
+            font-weight: bold;
+        }
+
+        .filter-section select {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Search and Filtering Section -->
+    <div class="filter-section">
+        <label for="yearFilter">Filter by Year:</label>
+        <select id="yearFilter">
+            <option value="all">All Years</option>
+            <!-- Add options for specific years dynamically with JavaScript -->
+        </select>
+
+        <label for="priceFilter">Filter by Price:</label>
+        <select id="priceFilter">
+            <option value="all">All Prices</option>
+            <!-- Add options for specific price ranges dynamically with JavaScript -->
+        </select>
+    </div>
+
+    <!-- House Listings -->
+    <div class="house-list"></div>
+
+    <script src="your-javascript-file.js"></script>
+</body>
+</html>
